@@ -1,0 +1,11 @@
+<div style="margin: auto; max-width: 1000px; margin-bottom: 50px;">
+    <data-table id="persons-grid" headerTitle="Real-Time Dashboard" [pagination_limit]="true" [items]="items" [itemCount]="itemCount" (reload)="reloadItems($event)"
+        (rowClick)="rowClick($event)" (rowDoubleClick)="rowDoubleClick($event)" [rowTooltip]="rowTooltip" [rowColors]="rowColors">
+        <data-table-column [property]="'account_executive'" [header]="'Account Executive'" [sortable]="true" [resizable]="true">
+        </data-table-column>
+        <data-table-column [property]="'daily_turnover'" [header]="'Daily Turnover'" [sortable]="true" [resizable]="true">
+        </data-table-column>
+        <data-table-column [property]="'accumulated_turnover'" [header]="'Accumulated Turnover'" [sortable]="true" [resizable]="true">
+        </data-table-column>
+    </data-table>
+</div>
